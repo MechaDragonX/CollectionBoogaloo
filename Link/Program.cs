@@ -7,15 +7,15 @@ namespace Link
         static void Main(string[] args)
         {
             StudentLink link = new StudentLink();
-            Student ichi = new Student("Raghav", 17);
-            Student ni = new Student("Vivek", 44);
-            Student san = new Student("Pranav", 13);
-            Student yon = new Student("Deepa", 41);
+            Student one = new Student("Roger", 17);
+            Student two = new Student("Vlad", 44);
+            Student three = new Student("Parson", 13);
+            Student four = new Student("David", 41);
 
-            link.Add(ichi);
-            link.Add(ni);
-            link.Add(san);
-            link.Add(yon);
+            link.Add(one);
+            link.Add(two);
+            link.Add(three);
+            link.Add(four);
             Console.WriteLine(link);
 
             //link.Remove();
@@ -29,7 +29,7 @@ namespace Link
 
             try
             {
-                Console.WriteLine(link.Find("Pranav"));
+                Console.WriteLine(link.Find("Parson"));
                 Console.WriteLine(link.Find("Bob"));
             }
             catch (ItemNotFoundException e)
